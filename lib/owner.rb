@@ -11,6 +11,7 @@ class Owner
     @species = "human"
     @owner = self
     @@all << self
+    @pets = []
     
   end
   
@@ -31,8 +32,8 @@ class Owner
   end
   
   def cats
-    @@pets[:cats].collect do |cat|
-      cat.owner == self
+    @pets.each do |pet|
+      pet.class == Cat
     end
   end
   
