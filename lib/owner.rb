@@ -58,6 +58,14 @@ class Owner
     end
   end
   
+    def feed_cats
+    @pets.each do |pet|
+      if pet.class == Cat
+        pet.mood = "happy"
+      end
+    end
+  end
+  
   
   
 end
