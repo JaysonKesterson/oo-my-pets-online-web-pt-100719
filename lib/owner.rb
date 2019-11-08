@@ -42,4 +42,6 @@ class Owner
     @pets.each {|pet| pet.class == Dog}
   end
   
+  
+  
 end
