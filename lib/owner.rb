@@ -75,7 +75,11 @@ class Owner
     end
   end
   
-  
+    def list_pets
+      @pets.each do |pet|
+        puts pet
+      end
+    end
   
   
   
