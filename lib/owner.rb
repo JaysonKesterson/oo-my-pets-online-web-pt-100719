@@ -35,10 +35,7 @@ class Owner
   end
   
   def cats
-    @pets.each do |pet|
-      pet.class == Cat
-    end
+    @pets.each {|pet| pet.class == Cat}
   end
-end
   
 end
