@@ -12,7 +12,6 @@ class Owner
     @owner = self
     @@all << self
     @pets = []
-    
   end
   
   def say_species
@@ -40,6 +39,6 @@ class Owner
       pet.class == Cat
     end
   end
-  
+end
   
 end
