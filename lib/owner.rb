@@ -72,6 +72,7 @@ class Owner
     end
     @pets.each do |pet|
     pet.owner = nil
+    @owner.pets = nil
     end
   end
   
