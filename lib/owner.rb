@@ -38,4 +38,8 @@ class Owner
     @pets.each {|pet| pet.class == Cat}
   end
   
+  def dogs
+    @pets.each {|pet| pet.class == Dog}
+  end
+  
 end
