@@ -31,6 +31,10 @@ class Owner
     @@all = []
   end
   
+  def pets=(pet)
+    @pets << pet
+  end
+  
   def cats
     @pets.each do |pet|
       pet.class == Cat
